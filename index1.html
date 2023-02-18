@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de admisión</title>
+</head>
+<body>
+    <h2>Formulario de admisión Viejuners</h2>
+    <form>
+        <fieldset>
+          <legend>Información personal</legend>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" placeholder="Nombre" tabindex="1" autofocus><br>
+        
+            <label for="last-name">Apellidos</label><br>
+            <input type="text" id="last-name" placeholder="Apellidos" tabindex="2"><br>
+
+        
+        
+            <label for="age">Edad</label><br>
+            <input type="number" id="age" placeholder="Edad" tabindex="3"><br>
+        
+            <label for="gender">Hombre</label>
+            <input type="radio" id="gender" name="options" tabindex="4"><br>
+        
+            <label for="gender">Mujer</label>
+            <input type="radio" id="gender" name="options" tabindex="5"><br>
+
+            <label><strong>¿Me siento viejuner?</strong></label><br>
+            <label for="question">Sí</label>
+            <input type="checkbox" id="question" tabindex="6"><br>
+
+            <label for="textolinea">Escribe algo sobre ti</label><br>
+            <textarea name="textogrande" id="textolinea" placeholder="Escribe aquí..." tabindex="7"></textarea><br>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend><br>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="Correo electrónico" tabindex="8"><br>
+        
+            <label for="telephone">Teléfono</label>
+            <input type="tel" id="telephone" placeholder="Teléfono" tabindex="9"><br><br>
+        </fieldset>
+        
+        <input type="submit" value="Enviar" tabindex="10">
+        <input type="reset" value="Borrar todo" tabindex="11">
+    </form>
+</body>
+</html>
