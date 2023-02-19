@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los ladronzuelos de bicicletas</title>
+    <title>Formulario de robos</title>
 </head>
 <body>
     <h2>Formulario bicicletas robadas</h2>
@@ -25,12 +25,67 @@
 
                 <label>Precio aproximado</label><br>
                 <label for="price">0€</label>
-                <input type="range" id="price" tabindex="4" name="precio">
-                <label>100€</label>
+                <input type="range" id="price" min="0" max="100" tabindex="4" name="precio">
+                <label>100€</label><br><br>
 
                 <label for="tipo-bici">Tipo de bicicleta</label><br>
-                <select>
-                    <option>
+                <select name="modelos" id="tipo-bici" tabindex="5">
+                    <optgroup label="Paseo">
+                        <option value="señorial">Señorial</option>
+                        <option value="anti-plebeyos">Anti-plebeyos</option>
+                        <option value="por-encima-del-hombro">PorEncimaDelHombro</option>
+                    </optgroup>
+                    
+                    <optgroup label="Montaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="hueleflores-premium">Hueleflores premium</option>
+                        <option value="fango-lover">Fango lover</option>
+                    </optgroup>
+                    
+                    <optgroup label="Carreras">
+                        <option value="metroymedio" selected>Metroymedio</option>
+                        <option value="3-de-la-tarde">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>
+                    </optgroup>
+                </select><br><br>
+                
+                <label for="accesorios">Accesorios de la bicicleta (selecciona uno o más con ctrl)</label><br>
+                <select name="accesory" id="accesorios" multiple tabindex="6">
+                    <option value="ruedines">Ruedines</option>
+                    <option value="pegatinas">Pegatinas</option>
+                    <option value="cestita">Cestita</option>
+                    <option value="bomba-de-aire">Bomba de aire</option>
+                    <option value="timbre">Timbre</option>
+                    <option value="foco">Foco</option>
+                </select><br><br>
+
+                <label>¿Qué marca era?</label><br>
+                <input list="marca" tabindex="7" placeholder="Pulsa aquí">
+                <datalist id="marca">
+                    <option value="Specialized">
+                    <option value="Trek">
+                    <option value="Merida">
+                    <option value="Scott">
+                    <option value="Giant">
+                    <option value="Cube">
+                    <option value="LaPierre">
+                    <option value="Orbea">
+                    <option value="Cannondale">
+                    <option value="BMC">
+                    <option value="Canyon">
+                    <option value="Look">
+                    <option value="Protek">
+                    <option value="Megamo">
+                    <option value="Pinarello">
+                    <option value="Bianchi">
+                    <option value="Bh">
+                    <option value="Factor">
+                    <option value="Ghost">
+                    <option value="Cervélo">
+                    <option value="Argon">
+                </datalist><br><br>
+                <input type="submit" value="Enviar" tabindex="8">
+                <input type="reset" value="Borrar todo" tabindex="9">
         </fieldset>
     </form>
 </body>

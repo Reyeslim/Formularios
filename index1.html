@@ -20,13 +20,13 @@
         
         
             <label for="age">Edad</label><br>
-            <input type="number" id="age" placeholder="Edad" tabindex="3"><br>
+            <input type="number" id="age" min="0" max="100" placeholder="Edad" tabindex="3"><br>
         
-            <label for="gender">Hombre</label>
-            <input type="radio" id="gender" name="options" tabindex="4"><br>
+            <label for="gender1">Hombre</label>
+            <input type="radio" id="gender1" name="options" tabindex="4"><br>
         
-            <label for="gender">Mujer</label>
-            <input type="radio" id="gender" name="options" tabindex="5"><br>
+            <label for="gender2">Mujer</label>
+            <input type="radio" id="gender2" name="options" tabindex="5"><br>
 
             <label><strong>¿Me siento viejuner?</strong></label><br>
             <label for="question">Sí</label>
@@ -42,10 +42,9 @@
         
             <label for="telephone">Teléfono</label>
             <input type="tel" id="telephone" placeholder="Teléfono" tabindex="9"><br><br>
+            <input type="submit" value="Enviar" tabindex="10">
+            <input type="reset" value="Borrar todo" tabindex="11">
         </fieldset>
-        
-        <input type="submit" value="Enviar" tabindex="10">
-        <input type="reset" value="Borrar todo" tabindex="11">
     </form>
 </body>
 </html>
